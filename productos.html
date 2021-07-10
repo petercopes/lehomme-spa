@@ -1,0 +1,125 @@
+<form id="hiddenForm" class="hide">
+    <h3>EDITAR PRODUCTO:</h3>
+    <label>Imagen:</label>
+    <select name="imagen">
+        <option value="images/bolso1.jpg">images/bolso1.jpg</option>
+        <option value="images/bolso2.jpg">images/bolso2.jpg</option>
+        <option value="images/camisa1.jpg">images/camisa1.jpg</option>
+        <option value="images/camisa2.jpg">images/camisa2.jpg</option>
+        <option value="images/pant1.jpg">images/pant1.jpg</option>
+        <option value="images/pant2.jpg">images/pant2.jpg</option>
+        <option value="images/polo1.jpg">images/polo1.jpg</option>
+        <option value="images/polo2.jpg">images/polo2.jpg</option>
+        <option value="images/suda2.jpg">images/suda2.jpg</option>
+        <option value="images/zap1.jpg">images/zap1.jpg</option>
+        <option value="images/zap2.jpg">images/zap2.jpg</option>
+    </select>
+    <label>Nombre:</label>
+    <input type="name" name="product" maxlength="20" value="">
+    <label>Precio:</label>
+    <input type="number" name="price" value="">
+    <label>Disponibilidad:</label>
+    <select name="stock">
+        <option value="OUT OF STOCK">OUT OF STOCK</option>
+        <option value="AVAILABLE">AVAILABLE</option>
+    </select>
+    <button type="submit">Editar producto</button>
+</form>
+<!--en esta sección de la página se encuentra el formulario de carga de productos-->
+<div class="modal hide" id="loadProductsForm">
+    <div class="formStyle formAdmin" >
+        <div class="closeLogo exitProducto" id='closeMainForm'>
+            <img src="images/close.svg" alt="Close Navigation ">
+        </div> 
+        <h2 class="formTitle">Formulario para cargar productos:</h2>
+        <label>Cantidad:</label>
+        <select id="cantCol">
+            <option value="1">1</option>
+            <option value="2">2</option>
+        </select>
+        <form id="form1" class="column">
+            <h3>PRODUCTO 1</h3>
+            <label>Imagen:</label>
+            <select name="imagen">
+                <option value="images/bolso1.jpg">images/bolso1.jpg</option>
+                <option value="images/bolso2.jpg">images/bolso2.jpg</option>
+                <option value="images/camisa1.jpg">images/camisa1.jpg</option>
+                <option value="images/camisa2.jpg">images/camisa2.jpg</option>
+                <option value="images/pant1.jpg">images/pant1.jpg</option>
+                <option value="images/pant2.jpg">images/pant2.jpg</option>
+                <option value="images/polo1.jpg">images/polo1.jpg</option>
+                <option value="images/polo2.jpg">images/polo2.jpg</option>
+                <option value="images/suda2.jpg">images/suda2.jpg</option>
+                <option value="images/zap1.jpg">images/zap1.jpg</option>
+                <option value="images/zap2.jpg">images/zap2.jpg</option>
+            </select>
+            <label>Nombre:</label>
+            <input type="name" name="product" maxlength="20" value="">
+            <label>Precio:</label>
+            <input type="number" name="price" value="">
+            <label>Disponibilidad:</label>
+            <select name="stock">
+                <option value="OUT OF STOCK">OUT OF STOCK</option>
+                <option value="AVAILABLE">AVAILABLE</option>
+            </select>
+        </form>
+        <form id="form2">
+            <div class="hide">
+                <h3>PRODUCTO 2</h3>
+                <label>Imagen:</label>
+                <select name="imagen">
+                    <option value="images/bolso1.jpg">images/bolso1.jpg</option>
+                    <option value="images/bolso2.jpg">images/bolso2.jpg</option>
+                    <option value="images/camisa1.jpg">images/camisa1.jpg</option>
+                    <option value="images/camisa2.jpg">images/camisa2.jpg</option>
+                    <option value="images/pant1.jpg">images/pant1.jpg</option>
+                    <option value="images/pant2.jpg">images/pant2.jpg</option>
+                    <option value="images/polo1.jpg">images/polo1.jpg</option>
+                    <option value="images/polo2.jpg">images/polo2.jpg</option>
+                    <option value="images/suda2.jpg">images/suda2.jpg</option>
+                    <option value="images/zap1.jpg">images/zap1.jpg</option>
+                    <option value="images/zap2.jpg">images/zap2.jpg</option>
+                </select>
+                <label>Nombre:</label>
+                <input type="name" name="product" maxlength="20" value="">
+                <label>Precio:</label>
+                <input type="number" name="price" value="">
+                <label>Disponibilidad:</label>
+                <select name="stock">
+                    <option value="OUT OF STOCK">OUT OF STOCK</option>
+                    <option value="AVAILABLE">AVAILABLE</option>
+                </select>
+            </div>
+        </form>
+        <p class="invalid"></p>
+        <button id="btn3">Cargar 3</button>
+        <button id="vaciar">Vaciar productos</button>
+        <button id="btncargar" type="submit">Cargar productos</button>
+    </div>
+</div>
+
+<div class="extras">
+    <div id="pagination">
+        <button id="previousPageButton" >
+                    PREVIOUS PAGE
+        </button>
+        <button id="nextPageButton" >
+            NEXT PAGE
+        </button>
+    </div>
+    <button id="displayAddForm">
+        ADD PRODUCTS
+    </button>
+    <div class="filters">
+        <h4>FILTROS</h4>
+        <label>
+            PRECIO
+            <input type="range" min="1" max="100000" value="40000" class="slider">
+            <p id="priceRange">40.000,00 ARS</p>
+        </label>
+    </div>
+</div>
+<!--en esta sección de la página se encuentra la tabla JSON cargada con información de productos-->
+<div class="tableJson">
+
+</div>

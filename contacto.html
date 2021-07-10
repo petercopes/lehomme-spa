@@ -1,0 +1,33 @@
+<h2 class="centerTextForm">CONSULTANOS!</h2>
+<form id="formContact" class="formStyle">
+    <!--en esta sección del formulario se encuentran los campos a completar-->
+    <div class="containerInputs">
+        <input class="typeName" type="text" name="name" value="" placeholder="Nombre (*)" required>
+        <p class="desktop" id="validName"></p>
+        <input class="typeSurname" type="text" name="surname" value="" placeholder="Apellido (*)" required>
+        <p class="desktop" id="validSurname"></p>
+        <input class="typeMail" type="email" name="mail" value="" placeholder="Email (*)" required>
+        <p class="desktop" id="validEmail"></p>
+        <input class="typePrefix" type="number" name="prefix" value="" placeholder="Prefijo" required>
+        <input class="typeNumber" type="number" name="phone" value="" placeholder="Teléfono (*)" required>
+        <p class="desktop" id="validPhone"></p>
+        <textarea placeholder="Motivo de consulta (*)" name="motive" required></textarea>
+        <p class="desktop" id="validTextarea"></p>
+    </div>
+    <!--en esta sección del formulario se encuentra el captcha a realizar-->
+    <p class="textForm">CAPTCHA</p>
+    <div class="containerCaptcha">
+        <p id="number">123</p>
+        <input id="userText" type="text" name="captcha" value="" placeholder="Ingrese el numero." required>
+        <p id="resultCaptcha" class="space"></p>
+        <button id="reload">Actualizar</button>
+        <button id="captcha">Soy humano</button>
+    </div>
+    <!--en esta sección se encuentra un aviso en el caso de completar incorrectamente el formulario-->
+    <p class="textForm" id="notice">Envía tu consulta una vez que hayas realizado correctamente el captcha o la consulta no será válida.
+    </p>
+    <!--button de enviar-->
+    <input id="sendForm" type="submit" value="Enviar" name="sendForm">
+</form>
+<p class="messageValidForm">CONSULTA ENVIADA CORRECTAMENTE</p>
+</div>
